@@ -45,7 +45,7 @@ Workflow of the project
 ### 17. Are patients below 40 years paying more `ADMISSION_DEPOSIT` when they get admitted to the hospital?
 
 
-### ---- Feature Engineering Steps ----
+# Feature Engineering
 
 ### 1. Target column (LOS)
 ### 2. Type of Admission + Severity of Illness
