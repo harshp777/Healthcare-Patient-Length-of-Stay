@@ -10,8 +10,8 @@ Workflow of the project
 
 ## Exploratory Data Analysis Hypotheses
 
-### 1. Univariate Analysis
-
+### ---- Univariate Analysis ----
+ 
 ### 2. Does patients' length of stay (LOS) change with respect to `HOSPITAL_TYPE_CODE`?
 
 ### 3. Does patients' length of stay (LOS) change with respect to `CITY_CODE_HOSPITAL`?
@@ -43,4 +43,15 @@ Workflow of the project
 ### 16. What type of illness & admission does the majority of patients who are less than 30 years of age have, and which department are most of them getting admitted to?
 
 ### 17. Are patients below 40 years paying more `ADMISSION_DEPOSIT` when they get admitted to the hospital?
+
+
+### ---- Feature Engineering Steps ----
+
+### 1. Target column (LOS)
+### 2. Type of Admission + Severity of Illness
+### 3. Severity of Illness + Bed grade 
+### 4. Department + Severity of Illness
+### 5. Handle Null Values using Coalesce
+### 6. Admission month & day
+
 
