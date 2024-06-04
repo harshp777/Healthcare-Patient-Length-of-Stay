@@ -55,3 +55,31 @@ Workflow of the project
 ### 6. Admission month & day
 
 
+# Phase 1: Data Simulation and Prediction
+
+### Feature Selection
+- The union of top features was determined by calculating feature importance (>0.01) from various models such as Decision Tree and XGBoost.
+- Selected features were then used to train the final models.
+
+### Modeling
+- The final dataset was trained using the following models:
+  - Random Forest
+  - Linear Regression
+  - XGBoost (XGB)
+- The XGBoost model was selected for further usage based on its performance metrics.
+
+### Simulation
+- For simulation, patient data from December 1st to December 31st was used to predict the LOS.
+- The prediction notebook is scheduled to run at a specific time each day for 30 days, predicting and storing the scores back to Snowflake.
+- For convenience, predictions were also generated in a single run for 30 iterations.
+- For each instance whenever the notebook is trigerred and the predictions are stored in the snowflake, an email is sent to the registered email id.
+
+![image](https://github.com/harshp777/Healthcare-Patient-Length-of-Stay/assets/58933098/cc839e59-32f4-4cde-a3fe-88d3b8c045c1)
+
+![image](https://github.com/harshp777/Healthcare-Patient-Length-of-Stay/assets/58933098/0ecb04b7-4117-4819-93d2-97e5eb0ce67a)
+
+
+
+### Completion
+- Phase 1 is completed by storing the simulated data and predictions in Snowflake for 30 days.
+
