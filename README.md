@@ -83,3 +83,11 @@ Workflow of the project
 ### Completion
 - Phase 1 is completed by storing the simulated data and predictions in Snowflake for 30 days.
 
+# Phase 2: Data and Concept/Model Drift Monitoring alongwith retraining pipeline
+
+
+### Data and Model Drift Monitoring
+- I developed data drift monitoring using Alibi package which uses KS Test for numberical distribution and Chi-Square for categorical Data
+- I developed concept/ model drfit monitoring using manually checking if the current metrics exceeds the previous training metrics(in our project case it is MAE and RMSE with the allowed threshold of 0.1)
+
+  
