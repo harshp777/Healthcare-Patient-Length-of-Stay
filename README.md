@@ -85,6 +85,9 @@ Workflow of the project
 
 # Phase 2: Data and Concept/Model Drift Monitoring alongwith retraining pipeline
 
+![image](https://github.com/harshp777/Healthcare-Patient-Length-of-Stay/assets/58933098/cbaa3c46-64b8-4185-bd7b-b34a2d1165d7)
+
+
 
 ### Data and Model Drift Monitoring
 - I developed data drift monitoring using Alibi package which uses KS Test for numberical distribution and Chi-Square for categorical Data
