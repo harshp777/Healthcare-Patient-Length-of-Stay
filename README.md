@@ -94,7 +94,11 @@ Workflow of the project
 ### Retraining Pipeline
 
 - If retraining is triggered:
+
 -- 1. Get the complete data from the database till last to last week from the maximum required date (Lets say today is 06-15-2024, then the training will be done with the data till 06-08-2024 and the remaining data (06-09-2024 to 06-15-2024 will be used for testing) 
+
 -- 2. Then preprocess and select features from this data and build the model
+
 -- 3. Compare the performance of the model (existing + new) on the last 1 weeks data i.e. the test data to select the best model
+
 -- 4. Replace the deployed model file to the best model and other process files too (mapping dict and feature dict)
